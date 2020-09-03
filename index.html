@@ -366,18 +366,20 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 offset-md-3">
                     <div class="form-group">
-                        <form action="#" method="POST">
-                            <div class="input-field">
-                                <input type="text" class="form-control" placeholder="Your Name" name="name">
-                            </div>
-                            <div class="input-field">
-                                <input type="email" class="form-control" placeholder="Email Address" name="email">
-                            </div>
-                            <div class="input-field">
-                                <textarea class="form-control" placeholder="Your Message" rows="3" name="message"></textarea>
-                            </div>
-                            <button class="btn btn-send" type="submit">Send me</button>
-                        </form>
+                        <div class="kwes-form">
+                            <form method="POST" action="https://kwes.io/api/foreign/forms/dpqESyFz4ssGRNuKtrDL">
+                                <div class="input-field">
+                                    <input type="text" name="name" class="form-control" placeholder="Jméno" >
+                                </div>
+                                <div class="input-field">
+                                    <input type="email" name="email" class="form-control" placeholder="E-mail" >
+                                </div>
+                                <div class="input-field">
+                                    <textarea name="message" rules="required" class="form-control" placeholder="Vaše zpráva" rows="3" ></textarea>
+                                </div>
+                                <button class="btn btn-send" type="submit">ODESLAT</button>
+                            </form>
+                        </div>
 
                         <div id="success">
                             <p>Your Message was sent successfully</p>
@@ -390,7 +392,7 @@
             </div>
         </div>
     </section>
-
+    
 
 
 <footer>
@@ -418,7 +420,9 @@
 <script src="https://wastenot.cz/js/jquery.nav.js"></script>
 <script src="https://wastenot.cz/js/wow.min.js"></script>
 <script src="https://wastenot.cz/js/main.js"></script>
+<script src="https://kwes.io/js/kwes.js" charset="utf-8"></script>
 
 </body>
 
 </html>
+
